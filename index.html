@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Weather</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <header>
+        <form action="" id="headerText" class="main_header_text all_data">
+            <input id="textCity" type="text" name="headerText" pattern="[A-Za-z]" placeholder="Write a city name">
+            <button id="textButton">Search</button>
+        </form>
+    </header>
+
+    <main>   
+        <section id="mainCityName" class="main_city_name all_data">
+            <div class="city_name">City Name, Country</div>
+        </section>
+
+        <section id="mainWeatherForecast" class="main_weather_forecast all_data">
+            <div class="forecast"><span>Current day: <span class="day_forecast"></span> </span> Monday 14.09.2020</div>
+            <div class="forecast"><span>Temp: <span class="temperature_forecast"></span> </span></div>
+            <div class="forecast"><span>Rain: <span class="rain_forecast"></span> </span></div>
+            <div class="forecast"><span>Humidity: <span class="humidity_forecast"></span> </span> </div>
+            <div class="forecast"><span>Cloudy: <span class="clouds_forecast"></span> </span> </div>
+            <div class="forecast"><span>Windy: <span class="wind_forecast"></span> </span></div>
+            <div class="forecast"><span>Sky: <span class="sky_forecast"></span> </span></div>
+            <div class="forecast"><span>Pressure: <span class="pressure_forecast"></span></span></div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="mainFooter" class="main_footer all_data"><a href="https://github.com/asaser" target="_blank">My GitHub</a></div>
+    </footer>
+    
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+</html>

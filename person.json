@@ -1,0 +1,12 @@
+{
+    "name": "David",
+    "favcolor": "red",
+    "isProgrammer": true,
+    "language": ["JS", "PHP", "Java"],
+    "friends": [{
+        "name": "Peter",
+        "favcolor": "green",
+        "isProgrammer": false,
+        "friends": [""]
+    }]
+}
