@@ -1,7 +1,7 @@
 {
   "name": "weatherapi",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is weather aplication",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,13 +10,18 @@
     "type": "git",
     "url": "git+https://github.com/asaser/WeatherAPI.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "asaser",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/asaser/WeatherAPI/issues"
   },
   "homepage": "https://github.com/asaser/WeatherAPI#readme",
   "dependencies": {
+    "express": "^4.17.1",
+    "nedb": "^1.8.0",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
     "dotenv": "^8.2.0"
   }
 }
