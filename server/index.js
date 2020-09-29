@@ -1,14 +1,13 @@
-// console.log(process.env.SECRET_MESSAGE);
-// console.log(process.env.TOKEN);
-
 // console.log(process.env.API_KEY_NEW);
 
    // API using jQuery
 
    $(document).ready(function () {
 
+
        $("#textButton").click(function () {
 
+         var APIkey = process.env.API_KEY;
 
            const approvalText = $("#textCity").val();
 
