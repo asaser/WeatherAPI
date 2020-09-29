@@ -10,7 +10,7 @@ console.log(process.env.TOKEN);
 
 //        $("#textButton").click(function () {
 
-//            const APIkey = "882093c6b009651d06b4d050d0d05415";
+//           
 //            //    const APIkey = process.env.API_KEY;
 
 //            const approvalText = $("#textCity").val();
