@@ -1,10 +1,9 @@
-// console.log(process.env.API_KEY_NEW);
-
 // API using jQuery
 
 $(document).ready(function () {
 
 
+// add object to create current day
     const d = new Date();
 
     function nowaData() {
@@ -13,6 +12,7 @@ $(document).ready(function () {
 
     $("#textButton").click(function () {
 
+        var nopeToken = 0;
         //  var APIkey = process.env.API_KEY;
         var APIkey = "882093c6b009651d06b4d050d0d05415"; //OpenWeatherMap website
 
@@ -36,18 +36,18 @@ $(document).ready(function () {
                     // temperature in city degrees C
                     $(".temperature_forecast").html('<span>Temp: </span>' + data.main.temp + '<span> °C</span>');
                     // rain mm
-                    $(".rain_forecast").html('<span>Rain: </span>' + data.main.rain + '<span> mm</span>');
+                    $(".rain_forecast").html('<span>Rain: </span>' + data.rain + '<span> mm</span>');
                     // humiditi
                     $(".humidity_forecast").html('<span>Humidity: </span>' + data.main.humidity + '<span> %</span>');
                     // clouds %
-                    $(".clouds_forecast").html('<span>Cloudy: </span>' + data.clouds.all + '<span> %</span>');
+                    $(".clouds_forecast").html('<span>Cloudy: </span>' + data.clouds.all + '<span> %</span>' + " " + data.weather[0].description );
                     // wind kn/h
                     $(".wind_forecast").html('<span>Windy: </span>' + data.wind.speed + '<span> km/h</span>');
                     // sky
                     $(".sky_forecast").html('<span>Sky: </span>' + data.weather[0].description);
                     // pressure
                     $(".pressure_forecast").html('<span>Pressure: </span>' + data.main.pressure + '<span> hPa</span>');
-                    //    console.log(data);
+                       console.log(data);
                 }
 
                 //    error: function (e) {
