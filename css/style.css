@@ -8,7 +8,7 @@ body {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    background-color: rgba(25, 135, 178, 0.714);
+    background-color: rgba(25, 135, 178, 0.551);
     height: 100vh;
 }
 
@@ -30,12 +30,12 @@ body {
     font: italic 20px Georgia;
     background-color: rgba(255, 255, 255, 0.39);
     border-radius: 35px 0px 35px 0px;
-    border-bottom: 5px solid rgb(25, 134, 178);
+    border-bottom: 5px solid rgba(27, 97, 167, 0.891);
     outline: none;
 }
 
 .main_header_text input:hover, button:hover {
-    background-color: rgba(99, 167, 194, 0.483);
+    background-color: rgba(25, 135, 178, 0.551);
 }
 
 .main_city_name, .main_weather_forecast, .main_footer {
