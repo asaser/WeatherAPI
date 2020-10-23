@@ -41,6 +41,8 @@ body {
 .main_city_name, .main_weather_forecast, .main_footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font: italic bold 25px/50px Georgia;
     padding-top: 30px;
     color: #1b1b1bef;
