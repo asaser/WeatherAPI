@@ -1,5 +1,5 @@
 * {
-    margin: 0; 
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -8,7 +8,7 @@ body {
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    background-image: url("/img/img_WeatherForecast.jpg");
+    background-color: rgba(25, 135, 178, 0.714);
     height: 100vh;
 }
 
@@ -20,6 +20,7 @@ body {
 }
 
 .main_header_text {
+    display: flex;
     flex-direction: row;
     padding-top: 60px;
 }
@@ -29,15 +30,16 @@ body {
     font: italic 20px Georgia;
     background-color: rgba(255, 255, 255, 0.39);
     border-radius: 35px 0px 35px 0px;
-    border-bottom: 5px solid rgba(228, 18, 18, 0.74);
+    border-bottom: 5px solid rgb(25, 134, 178);
     outline: none;
 }
 
 .main_header_text input:hover, button:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(99, 167, 194, 0.483);
 }
 
 .main_city_name, .main_weather_forecast, .main_footer {
+    display: flex;
     flex-direction: column;
     font: italic bold 25px/50px Georgia;
     padding-top: 30px;
@@ -45,4 +47,10 @@ body {
     text-shadow: 3px 3px 20px #8f1414;
 }
 
+body .main_footer {
+    display: flex;
+    justify-content: center;
+    justify-items: flex-end;
+    font-size: 20px;
+}
 

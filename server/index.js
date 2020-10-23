@@ -35,12 +35,10 @@ $(document).ready(function () {
                     $(".current_day").html('<span>Current day: </span>' + nowaData());
                     // temperature in city degrees C
                     $(".temperature_forecast").html('<span>Temp: </span>' + data.main.temp + '<span> °C</span>');
-                    // rain mm
-                    $(".rain_forecast").html('<span>Rain: </span>' + data.rain + '<span> mm</span>');
                     // humiditi
                     $(".humidity_forecast").html('<span>Humidity: </span>' + data.main.humidity + '<span> %</span>');
                     // clouds %
-                    $(".clouds_forecast").html('<span>Cloudy: </span>' + data.clouds.all + '<span> %</span>' + " " + data.weather[0].description );
+                    $(".clouds_forecast").html('<span>Cloudy: </span>' + data.clouds.all + '<span> %</span>');
                     // wind kn/h
                     $(".wind_forecast").html('<span>Windy: </span>' + data.wind.speed + '<span> km/h</span>');
                     // sky
