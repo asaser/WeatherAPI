@@ -3,7 +3,7 @@
 $(document).ready(function () {
 
 
-// add object to create current day
+    // add object to create current day
     const d = new Date();
 
     function nowaData() {
@@ -27,15 +27,13 @@ $(document).ready(function () {
                 dataType: "json",
                 success: function (data) {
 
-                    // sprawdzic inne URL na stroce, może to pomoże aby znależć RAIN oraz dodać różne grafiki
                     // city
                     $(".city_name").html('<span>City name: </span>' + data.name + ', ' + data.sys.country);
-
                     // current day
                     $(".current_day").html('<span>Current day: </span>' + nowaData());
                     // temperature in city degrees C
                     $(".temperature_forecast").html('<span>Temp: </span>' + data.main.temp + '<span> °C</span>');
-                    // humiditi
+                    // humidity
                     $(".humidity_forecast").html('<span>Humidity: </span>' + data.main.humidity + '<span> %</span>');
                     // clouds %
                     $(".clouds_forecast").html('<span>Cloudy: </span>' + data.clouds.all + '<span> %</span>');
@@ -45,15 +43,18 @@ $(document).ready(function () {
                     $(".sky_forecast").html('<span>Sky: </span>' + data.weather[0].description);
                     // pressure
                     $(".pressure_forecast").html('<span>Pressure: </span>' + data.main.pressure + '<span> hPa</span>');
-                       console.log(data);
+                    console.log(data);
                 }
 
-                //    error: function (e) {
-                //    }
+                // error: function (status) {
+
+                // }
             });
 
-        } else {
+        } else if (approvalText == '') {
             alert("Please write city name on text field");
+        } else {
+            alert("Please write in text field value");
         }
     });
 
