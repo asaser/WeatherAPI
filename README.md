@@ -1,5 +1,5 @@
 # WeatherAPI
 
-## Demo App
+## Program
 
 ## https://asaser.github.io/WeatherAPI/
